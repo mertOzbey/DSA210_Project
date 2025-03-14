@@ -6,7 +6,7 @@ Traffic accidents are a major concern in large metropolitan areas like New York 
 ## Data Sources
 In this project I will utilize publicly available datasets:
 - **NYC Vehicle Crashes (2012-2023)**: A dataset containing records of vehicle crashes in NYC, sourced from Kaggle.
-- **NYC Weather Data**: Historical weather data for NYC. The current dataset available includes only 2019, so a more extensive dataset covering 2012-2023 will be identified and used.
+- **NYC Weather Data**: Historical weather data for NYC, sourced from Kaggle. The current dataset available includes only 2019, so a more extensive dataset covering 2012-2023 will be identified and used.
 
 ## Data Collection & Enrichment Plan
 Since the weather dataset currently covers only 2019, additional weather data will be collected to cover the full timeframe (2012-2023). Possible sources include:
