@@ -10,10 +10,16 @@ In this project I will utilize publicly available datasets:
 
 ## Data Collection & Enrichment Plan
 Since the weather dataset currently covers only 2019, additional weather data will be collected to cover the full timeframe (2012-2023). Possible sources include:
-- NYC Open Data 
-- Additional publicly open datasets
+- **NYC Open Data**
+- **Additional publicly open datasets**
 
 Once both datasets are available, they will be merged based on date and location to analyze correlations between weather events and accident occurrences.
+
+## Tools and Technologies
+I will utilize the following technologies during this project.
+- **Python:** for working on data
+- **Pandas:** for manipulating the data
+- **Matplotlib:** for visualization of data
 
 ## Expected Analysis Steps
 1. **Data Cleaning & Preprocessing**
