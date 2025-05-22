@@ -106,7 +106,7 @@ Created the final dataset **final_df_minimized.csv** with the following features
 - **MAE** (Mean Absolute Error)
 - **R² Score** (Explained Variance)
 
-4. **Visualiziton**
+4. **Visualization**
 - **Scatter plots** comparing predicted vs actual crash counts for each model
 - **Feature importance barplot** for Random Forest
 - **Decision tree structure plot**
