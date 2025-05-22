@@ -81,4 +81,39 @@ I used Pearson Correlation  and p = 0.05
 
 I have calculated p = 0.5050049984197857 > 0.05, therefore we have failed to reject Null Hypothesis.
 
-  
+## Machine Learning Phase
+In this phase I prepared a final dataset from using my previous data sets to adopt ML methods easyly. 
+My aim is to measure the performances of the several methods and detect the most convenient method to choose. 
+
+## Taken Steps:
+1. **Data Preparation**
+Created the final dataset **final_df_minimized.csv** with the following features:
+- **precipitation**: total daily rainfall (mm)
+- **tavg**: average daily temperature (°C)
+- **is_weekend**: whether the day is a weekend
+- **bad_weather**: whether the day had extreme weather (precipitation > 3mm or tavg < 0°C)
+- **temp_category**: temperature category (Very Cold, Cold, Mild, Warm)
+- **num_crashes**: number of vehicle crashes (target variable)
+
+2. **Modeling**
+- **Linear Regression**
+- **Ridge Regression**
+- **Decision Tree Regressor**
+- **Random Forest Regressor**
+
+3. **Evaluation Metrics**
+- **RMSE** (Root Mean Squared Error)
+- **MAE** (Mean Absolute Error)
+- **R² Score** (Explained Variance)
+
+4. **Visualiziton**
+- **Scatter plots** comparing predicted vs actual crash counts for each model
+- **Feature importance barplot** for Random Forest
+- **Decision tree structure plot**
+
+## Conclusion:
+**Decision Tree Regressor** achieved the best performance with the lowest RMSE (85.40) and highest R² score (0.70).
+Linear models are underperformed very probably due to the non-linear nature of the problem.
+**Precipitation** and **temperature** are observed the most influential features in crash prediction.
+
+It is observed that there is an important relationship between weather conditions and traffic accidents in New York City which can be understood by Machine Learning methods (especially Tree Based Regressors). These findings can be important for urban planning and reducing the traffic accidents by governmantal instruments.
