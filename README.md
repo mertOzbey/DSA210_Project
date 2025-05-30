@@ -83,7 +83,7 @@ I have calculated p = 0.5050049984197857 > 0.05, therefore we have failed to rej
 
 ## Machine Learning Phase
 In this phase I prepared a final dataset from using my previous data sets to adopt ML methods easyly. 
-My aim is to measure the performances of the several methods and detect the most convenient method to choose. 
+My aim is to evaluate the effectiveness of different ML models in predicting daily crash counts and identify the most accurate model.
 
 ## Taken Steps:
 1. **Data Preparation**
@@ -96,8 +96,7 @@ Created the final dataset **final_df_minimized.csv** with the following features
 - **num_crashes**: number of vehicle crashes (target variable)
 
 2. **Modeling**
-- **Linear Regression**
-- **Ridge Regression**
+- **KNN Regressor**
 - **Decision Tree Regressor**
 - **Random Forest Regressor**
 
@@ -106,14 +105,18 @@ Created the final dataset **final_df_minimized.csv** with the following features
 - **MAE** (Mean Absolute Error)
 - **R² Score** (Explained Variance)
 
+**Summary**
+- **KNN Regressor** RMSE: 92.36, MAE: 68.84, R²: 0.647
+- **Decision Tree Regressor** RMSE: 85.40, MAE: 62.69, R²: 0.698
+- **Random Forest Regressor** RMSE: 90.88, MAE: 67.26, R²: 0.658
+
 4. **Visualization**
 - **Scatter plots** comparing predicted vs actual crash counts for each model
 - **Feature importance barplot** for Random Forest
-- **Decision tree structure plot**
+- **Decision Tree Diagram** for interpretability
 
 ## Conclusion:
-**Decision Tree Regressor** achieved the best performance with the lowest RMSE (85.40) and highest R² score (0.70).
-Linear models are underperformed very probably due to the non-linear nature of the problem.
+**Decision Tree Regressor** performed best with the lowest RMSE and highest R².
 **Precipitation** and **temperature** are observed the most influential features in crash prediction.
 
 It is observed that there is an important relationship between weather conditions and traffic accidents in New York City which can be understood by Machine Learning methods (especially Tree Based Regressors). These findings can be important for urban planning and reducing the traffic accidents by governmantal instruments.
